@@ -79,4 +79,35 @@ background-clip: border-box;
 border: 1px solid #e6e4e9;
 border-radius: 8px;
 }
+body {
+    background: #000000;
+    background: linear-gradient(to right, #ffffff, #ffffff);
+  }
+  
+  .btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+  }
+  
+  .btn-google {
+    color: rgb(241, 15, 15) !important;
+    background-color: #030303;
+  }
+  
+  .btn-facebook {
+    color: rgb(49, 20, 212) !important;
+    background-color: #3b5998;
+  }
+  .btn-twitter {
+    color: rgb(20, 119, 231) !important;
+    background-color: #3b5998;
+  }
+  footer{ position:fixed; 
+    left:0px; 
+    bottom:0px; 
+    height: 75px; 
+    width:100%; 
+    background:grey; 
+    color: white; }
 

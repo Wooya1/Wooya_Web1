@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b034f61428.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/css/search-bar.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -22,14 +24,18 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">홈</a>
+                <a class="nav-link active" aria-current="page" href="index.html">홈</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"
+                <a class="nav-link" href="3.html"
+                data-toggle="modal" data-target="#login">유저게시판</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="1.html"
                 data-toggle="modal" data-target="#login">로그인</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown" href="#">회원가입</a>
+                <a class="nav-link dropdown" href="2.html">회원가입</a>
                   
                
                 <ul class="dropdown-menu">
@@ -227,151 +233,34 @@ target="_blank">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/DMw44r9eem0" 
         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen></iframe>
-        <br><br>
-        <!-- 유튜브(테라1.0) 링크 -->
-    
+        <br><br><br><br>
+        <!-- 유튜브(테라1.0) 링크 -->  
 
+<div class="container my-5">
 
-
-
-
-        <header class="p-3 text-bg-dark">
-          <div class="container">
-              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-      
-      
-                  <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                      <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-                  </ul>
-      
-                  <div class="text-end">
-                      <button type="button" class="btn btn-outline-light me-2">로그인</button>
-                      <button type="button" class="btn btn-warning" >회원가입</button>
-                  </div>
-              </div>
-          </div>
-      </header>
-        <div class="row">
-          <div class="card card-margin search-form">
-              <div class="card-body p-0">
-                  <form id="search-form">
-                      <div class="row">
-                          <div class="col-12">
-                              <div class="row no-gutters">
-                                  <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                                      <label for="search-type" hidden>검색 유형</label>
-                                      <select class="form-control" id="search-type" name="searchType">
-                                          <option>제목</option>
-                                          <option>본문</option>
-                                          <option>id</option>
-                                          <option>닉네임</option>
-                                          <option>해시태그</option>
-                                      </select>
-                                  </div>
-                                  <div class="col-lg-8 col-md-6 col-sm-12 p-0">
-                                      <label for="search-value" hidden>검색어</label>
-                                      <input type="text" placeholder="검색어..." class="form-control" id="search-value"
-                                             name="searchValue">
-                                  </div>
-                                  <div class="col-lg-1 col-md-3 col-sm-12 p-0">
-                                      <button type="submit" class="btn btn-base">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                               viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                               stroke-linecap="round" stroke-linejoin="round"
-                                               class="feather feather-search">
-                                              <circle cx="11" cy="11" r="8"></circle>
-                                              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                          </svg>
-                                      </button>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </form>
-              </div>
-          </div>
-      </div>
+  <footer class="bg-dark text-center text-white">
   
-      <div class="row">
-          <table class="table" id="article-table">
-              <thead>
-              <tr>
-                  <th class="title col-6"><a>제목</a></th>
-                  <th class="hashtag col-2"><a>조회수</a></th>
-                  <th class="user-id"><a>작성자</a></th>
-                  <th class="created-at"><a>작성일</a></th>
-              </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>여기 뭐하는 곳인가요?</td>
-                  <td>99</td>
-                  <td>김뉴비</td>
-                  <td>
-                      <time>2022-11-21</time>
-                  </td>
-                  <tr>
-                    <td>이번 이벤트맵 공략해봤다</td>
-                    <td>26</td>
-                    <td>고인물</td>
-                    <td>
-                        <time>2022-11-20</time>
-                    </td>
-                </tr>
-
-              </tr>
-              <tr>
-                <td>우리 이제 뭐함?</td>
-                <td>2</td>
-                <td>무뇌독타</td>
-                <td>
-                    <time>2022-11-19</time>
-                </td>
-            </tr>
-              <tr>
-                  <td class="title"><a>게시글은 로그인 후 작성 가능합니다</a></td>
-                  <td class="hashtag">54</td>
-                  <td class="user-id">doctor1</td>
-                  <td class="created-at">
-                      <time>2022-11-19</time>
-                  </td>
-              </tr>
-              
-              
-              
-              </tbody>
-          </table>
-      </div>
-  
-      <div class="row">
-          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-              <a class="btn btn-primary me-md-2" role="button" id="write-article">글쓰기</a>
-          </div>
-      </div>
-  
-      <div class="row">
-          <nav id="pagination" aria-label="Page navigation">
-              <ul class="pagination justify-content-center">
-                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
-              </ul>
-          </nav>
-      </div>   
+  <div class="container p-4 pb-0">
+   
+    <section class="mb-4">
       
-      
-      <footer class=" container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <p class="col-md-4 mb-0 text-muted">&copy; 이거맞냐</p>
-        <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-        </ul>
-    </footer>           
-
-
-
-
-
-
+      <a class="btn btn-outline-light btn-floating m-1" href=https://namu.wiki/w/%EB%AA%85%EC%9D%BC%EB%B0%A9%EC%A3%BC  target="_blank" role="button"
+        ><i class="fa-brands fa-wikipedia-w" target="_blank"></i
+      ></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/"  target="_blank" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+      다양한 정보를 찾아보세요.
+      <a class="btn btn-outline-light btn-floating m-1" href="index.html" role="button"
+        ><i class="fa-sharp fa-solid fa-house"></i>
+      </a>
+      <a class="btn btn-outline-light btn-floating m-1" href="3.html" role="button"
+        ><i class="fa-solid fa-comments"></i
+      ></a>
+    </section>
+</footer>
+  
+</div>
 
 </body>
 </html>
