@@ -104,9 +104,9 @@ body {
     background-color: #3b5998;
   }
   footer{ position:fixed; 
-    left:0px; 
-    bottom:0px; 
-    height: 75px; 
+    left: 0px; 
+    bottom: 0px; 
+    height: 105px; 
     width:100%; 
     background:grey; 
     color: white; }
